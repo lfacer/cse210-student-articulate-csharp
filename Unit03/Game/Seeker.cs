@@ -13,6 +13,28 @@ namespace Unit03.Game
         /// The responsibility of a Seeker is to keep track of its location.
         /// </para>
         /// </summary>
+        
+        public class Seeker
+        {
+            public int location = 0;
+
+            public Seeker()
+            {
+                Random random = new Random();
+                location = random.Next(1001);
+            }
+
+            public int GetLocation()
+            {
+                return location;
+            }
+
+            public void MoveLocation(int location)
+            {
+                this.location = location;
+            }
+
+        }
 
 
     // 2) Create the class constructor. Use the following method comment.
