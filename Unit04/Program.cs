@@ -36,7 +36,7 @@ namespace Unit04
             // create the cast
             Cast cast = new Cast();
 
-            // create the banner
+            // create the bannerf
             Actor banner = new Actor();
             banner.SetText("");
             banner.SetFontSize(FONT_SIZE);
@@ -59,6 +59,7 @@ namespace Unit04
             Random random = new Random();
             for (int i = 0; i < DEFAULT_ARTIFACTS; i++)
             {
+                // ASCII
                 string text = ((char)random.Next(33, 126)).ToString();
                 string message = messages[i];
 
